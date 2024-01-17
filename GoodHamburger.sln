@@ -7,12 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7C86B2DA-0A7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{956CD623-2400-4D96-9CAF-3B4E17587B20}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodHamburger.API", "src\GoodHamburger.API\GoodHamburger.API.csproj", "{A7BF722B-DA40-4280-9691-6A1CAF1F2342}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoodHamburger.API", "src\GoodHamburger.API\GoodHamburger.API.csproj", "{A7BF722B-DA40-4280-9691-6A1CAF1F2342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{E36BA6BF-7494-44AC-9B58-7B8EDA587D89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "src\Service\Service.csproj", "{BF1A6657-CB02-4D0D-846B-6628B67A5B06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "src\Repository\Repository.csproj", "{CE144E2A-A92C-4CAD-8156-1BA75320A636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,12 +33,32 @@ Global
 		{A7BF722B-DA40-4280-9691-6A1CAF1F2342}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7BF722B-DA40-4280-9691-6A1CAF1F2342}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7BF722B-DA40-4280-9691-6A1CAF1F2342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36BA6BF-7494-44AC-9B58-7B8EDA587D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36BA6BF-7494-44AC-9B58-7B8EDA587D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36BA6BF-7494-44AC-9B58-7B8EDA587D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36BA6BF-7494-44AC-9B58-7B8EDA587D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF1A6657-CB02-4D0D-846B-6628B67A5B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1A6657-CB02-4D0D-846B-6628B67A5B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1A6657-CB02-4D0D-846B-6628B67A5B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1A6657-CB02-4D0D-846B-6628B67A5B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE144E2A-A92C-4CAD-8156-1BA75320A636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE144E2A-A92C-4CAD-8156-1BA75320A636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE144E2A-A92C-4CAD-8156-1BA75320A636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE144E2A-A92C-4CAD-8156-1BA75320A636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A7BF722B-DA40-4280-9691-6A1CAF1F2342} = {7C86B2DA-0A7B-4D8C-9DA8-D330AADFA8ED}
+		{E36BA6BF-7494-44AC-9B58-7B8EDA587D89} = {7C86B2DA-0A7B-4D8C-9DA8-D330AADFA8ED}
+		{BF1A6657-CB02-4D0D-846B-6628B67A5B06} = {7C86B2DA-0A7B-4D8C-9DA8-D330AADFA8ED}
+		{CE144E2A-A92C-4CAD-8156-1BA75320A636} = {7C86B2DA-0A7B-4D8C-9DA8-D330AADFA8ED}
+		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC} = {7C86B2DA-0A7B-4D8C-9DA8-D330AADFA8ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1473081-5D6F-436B-8A29-9CA87A9F10CD}
