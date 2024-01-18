@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using FluentValidation;
 using GoodHamburger.Domain.DTO.Order;
-using GoodHamburger.Domain.DTO.Product;
 using GoodHamburger.Domain.Models;
 using GoodHamburger.Repository.Interfaces;
 using GoodHamburger.Service.Interfaces;
@@ -140,6 +139,7 @@ namespace GoodHamburger.Service.Services
 
                 var orderProductsToRemove = existingOrder.OrderProducts.Select(x => x.Id);
 
+                existingOrder.CustomerName = orderObject.CustomerName;
                 existingOrder.OrderProducts = orderObject.OrderProducts;
                 existingOrder.GrossValue = orderObject.OrderProducts.Sum(x => x.Quantity * x.Product.Price);
                 existingOrder = discountService.CalculateOrderDiscount(existingOrder);
