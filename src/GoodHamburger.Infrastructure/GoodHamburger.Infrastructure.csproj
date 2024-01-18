@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\GoodHamburger.Domain.csproj" />
+    <ProjectReference Include="..\GoodHamburger.Domain\GoodHamburger.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\GoodHamburger.Domain.csproj" />
-    <ProjectReference Include="..\Infrastructure\GoodHamburger.Infrastructure.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\GoodHamburger.Repository\GoodHamburger.Repository.csproj" />
   </ItemGroup>
 
 </Project>

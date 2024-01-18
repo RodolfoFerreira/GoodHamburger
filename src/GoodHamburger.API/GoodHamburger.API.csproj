@@ -18,10 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\GoodHamburger.Domain.csproj" />
-    <ProjectReference Include="..\Infrastructure\GoodHamburger.Infrastructure.csproj" />
-    <ProjectReference Include="..\Repository\GoodHamburger.Repository.csproj" />
-    <ProjectReference Include="..\Service\GoodHamburger.Service.csproj" />
+    <ProjectReference Include="..\GoodHamburger.Domain\GoodHamburger.Domain.csproj" />
+    <ProjectReference Include="..\GoodHamburger.Infrastructure\GoodHamburger.Infrastructure.csproj" />
+    <ProjectReference Include="..\GoodHamburger.Repository\GoodHamburger.Repository.csproj" />
+    <ProjectReference Include="..\GoodHamburger.Service\GoodHamburger.Service.csproj" />
   </ItemGroup>
 
 </Project>
