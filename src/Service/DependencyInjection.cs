@@ -8,7 +8,9 @@ namespace Service
     {
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
-            _ = services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IDiscountService, DiscountService>();
+            services.AddScoped<IOrderService, OrderService>();
 
             return services;
         }

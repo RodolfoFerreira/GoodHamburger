@@ -1,5 +1,7 @@
-﻿using GoodHamburger.Infrastructure.DatabaseContext;
+﻿using FluentValidation;
+using GoodHamburger.Infrastructure.DatabaseContext;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace Infrastructure
 {
@@ -9,9 +11,9 @@ namespace Infrastructure
         {
             services.AddDbContext<ApplicationDbContext>();
 
-            services.AddSingleton(TimeProvider.System);
-
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             return services;
         }

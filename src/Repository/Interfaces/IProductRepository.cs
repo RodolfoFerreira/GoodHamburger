@@ -7,5 +7,6 @@ namespace GoodHamburger.Repository.Interfaces
         Task<List<Product>> GetAll();
         Task<List<Product>> GetAllExtras();
         Task<List<Product>> GetAllByCategory(EnumCategory productCategory);
+        Task<List<Product>> GetAllByIds(IEnumerable<int> ids);
     }
 }

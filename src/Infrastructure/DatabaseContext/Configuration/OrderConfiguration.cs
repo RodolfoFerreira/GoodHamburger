@@ -11,8 +11,8 @@ namespace GoodHamburger.Infrastructure.DatabaseContext.Configuration
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.Property(x => x.OrderValue).HasPrecision(18, 2);
-            builder.Property(x => x.FinalValue).HasPrecision(18, 2);
+            builder.Property(x => x.GrossValue).HasPrecision(18, 2);
+            builder.Property(x => x.NetValue).HasPrecision(18, 2);
             builder.Property(x => x.DiscountPerc).HasPrecision(18, 2);
             builder.Property(x => x.DiscountValue).HasPrecision(18, 2);
             builder.Property(x => x.CustomerName).HasMaxLength(100);

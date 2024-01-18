@@ -8,7 +8,9 @@ namespace Repository
     {
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
-            _ = services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IOrderProductRepository, OrderProductRepository>();
 
             return services;
         }

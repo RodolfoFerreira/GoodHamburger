@@ -24,6 +24,7 @@ namespace GoodHamburger.API.Configuration
             #region Enpoints
 
             app.MapProductEndpoints();
+            app.MapOrderEndpoints();
 
             #endregion Enpoints
 
