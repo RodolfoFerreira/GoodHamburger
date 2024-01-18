@@ -1,8 +1,8 @@
-﻿using Domain.Models;
+﻿using GoodHamburger.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace Infrastructure.DatabaseContext
+namespace GoodHamburger.Infrastructure.DatabaseContext
 {
     public class ApplicationDbContext : DbContext
     {

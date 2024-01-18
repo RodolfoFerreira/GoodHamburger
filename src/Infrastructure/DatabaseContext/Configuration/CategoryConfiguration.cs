@@ -1,8 +1,8 @@
-﻿using Domain.Models;
+﻿using GoodHamburger.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.DatabaseContext.Configuration
+namespace GoodHamburger.Infrastructure.DatabaseContext.Configuration
 {
     public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {

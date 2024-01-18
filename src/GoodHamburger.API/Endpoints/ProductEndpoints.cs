@@ -1,5 +1,6 @@
-﻿using Domain.Models;
-using Service.Interfaces;
+﻿using GoodHamburger.Domain.DTO.Product;
+using GoodHamburger.Domain.Models;
+using GoodHamburger.Service.Interfaces;
 
 namespace GoodHamburger.API.Endpoints
 {
@@ -15,25 +16,27 @@ namespace GoodHamburger.API.Endpoints
             {
                 return await productService.GetAll();
             })
-            .Produces<List<Product>>()
+            .Produces<List<ProductDto>>()
             .ProducesProblem(StatusCodes.Status404NotFound)
             .ProducesProblem(StatusCodes.Status500InternalServerError)
             .WithSummary("List all products")
             .WithDescription("\n    GET /products");
 
-            root.MapGet("/sandwiches", async (IProductService productService) => {
+            root.MapGet("/sandwiches", async (IProductService productService) =>
+            {
                 return await productService.GetAllByCategory(EnumCategory.Sandwich);
             })
-            .Produces<List<Product>>()
+            .Produces<List<ProductDto>>()
             .ProducesProblem(StatusCodes.Status404NotFound)
             .ProducesProblem(StatusCodes.Status500InternalServerError)
             .WithSummary(@"List all sandwiches")
             .WithDescription("\n    GET /products/sandwiches");
 
-            root.MapGet("/extras", async (IProductService productService) => {
+            root.MapGet("/extras", async (IProductService productService) =>
+            {
                 return await productService.GetAllExtras();
             })
-            .Produces<List<Product>>()
+            .Produces<List<ProductDto>>()
             .ProducesProblem(StatusCodes.Status404NotFound)
             .ProducesProblem(StatusCodes.Status500InternalServerError)
             .WithSummary(@"List all extras")

@@ -1,5 +1,5 @@
 ﻿using GoodHamburger.API.Endpoints;
-using Infrastructure.DatabaseContext;
+using GoodHamburger.Infrastructure.DatabaseContext;
 using System.Globalization;
 
 namespace GoodHamburger.API.Configuration

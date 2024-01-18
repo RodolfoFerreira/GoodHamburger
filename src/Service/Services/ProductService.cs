@@ -1,14 +1,17 @@
-﻿using Domain.Models;
+﻿using GoodHamburger.Domain.Models;
 using Microsoft.AspNetCore.Http;
-using Repository.Interfaces;
-using Service.Interfaces;
+using GoodHamburger.Repository.Interfaces;
+using GoodHamburger.Service.Interfaces;
+using AutoMapper;
+using GoodHamburger.Domain.DTO.Product;
 
-namespace Service.Services
+namespace GoodHamburger.Service.Services
 {
-    internal class ProductService(IProductRepository productRepository) : IProductService
+    internal class ProductService(IProductRepository productRepository, IMapper mapper) : IProductService
     {
 
         private readonly IProductRepository _productRepository = productRepository;
+        private readonly IMapper _mapper = mapper;
 
         public async Task<IResult> GetAll()
         {
@@ -18,7 +21,7 @@ namespace Service.Services
 
                 if (products == null) { return Results.NotFound(); }
 
-                return Results.Ok(products);
+                return Results.Ok(_mapper.Map<List<ProductDto>>(products));
             }
             catch (Exception ex)
             {
@@ -34,7 +37,7 @@ namespace Service.Services
 
                 if (products == null) { return Results.NotFound(); }
 
-                return Results.Ok(products);
+                return Results.Ok(_mapper.Map<List<ProductDto>>(products));
             }
             catch (Exception ex)
             {
@@ -50,7 +53,7 @@ namespace Service.Services
 
                 if (products == null) { return Results.NotFound(); }
 
-                return Results.Ok(products);
+                return Results.Ok(_mapper.Map<List<ProductDto>>(products));
             }
             catch (Exception ex)
             {

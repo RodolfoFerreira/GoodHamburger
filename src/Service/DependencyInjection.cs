@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Service.Services;
-using Service.Interfaces;
+using GoodHamburger.Service.Services;
+using GoodHamburger.Service.Interfaces;
 
 namespace Service
 {

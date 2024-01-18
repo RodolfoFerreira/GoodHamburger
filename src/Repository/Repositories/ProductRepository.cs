@@ -1,9 +1,9 @@
-﻿using Domain.Models;
-using Infrastructure.DatabaseContext;
+﻿using GoodHamburger.Domain.Models;
+using GoodHamburger.Infrastructure.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
-using Repository.Interfaces;
+using GoodHamburger.Repository.Interfaces;
 
-namespace Repository.Repositories
+namespace GoodHamburger.Repository.Repositories
 {
     internal class ProductRepository(ApplicationDbContext context) : IProductRepository
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace Domain.Models
+namespace GoodHamburger.Domain.Models
 {
     public record Order : Entity
     {

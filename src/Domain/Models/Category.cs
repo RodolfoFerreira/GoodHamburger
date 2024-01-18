@@ -1,4 +1,4 @@
-﻿namespace Domain.Models
+﻿namespace GoodHamburger.Domain.Models
 {
     public record Category : Entity
     {

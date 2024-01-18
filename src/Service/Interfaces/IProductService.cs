@@ -1,7 +1,7 @@
-﻿using Domain.Models;
+﻿using GoodHamburger.Domain.Models;
 using Microsoft.AspNetCore.Http;
 
-namespace Service.Interfaces
+namespace GoodHamburger.Service.Interfaces
 {
     public interface IProductService
     {

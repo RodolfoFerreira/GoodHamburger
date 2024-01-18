@@ -1,6 +1,6 @@
-﻿using Domain.Models;
+﻿using GoodHamburger.Domain.Models;
 
-namespace Repository.Interfaces
+namespace GoodHamburger.Repository.Interfaces
 {
     public interface IProductRepository
     {

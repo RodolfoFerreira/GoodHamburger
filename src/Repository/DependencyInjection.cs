@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Repository.Interfaces;
-using Repository.Repositories;
+using GoodHamburger.Repository.Interfaces;
+using GoodHamburger.Repository.Repositories;
 
 namespace Repository
 {

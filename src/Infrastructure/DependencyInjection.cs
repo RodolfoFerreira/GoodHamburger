@@ -1,4 +1,4 @@
-﻿using Infrastructure.DatabaseContext;
+﻿using GoodHamburger.Infrastructure.DatabaseContext;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure
@@ -7,9 +7,11 @@ namespace Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
-            _ = services.AddDbContext<ApplicationDbContext>();
+            services.AddDbContext<ApplicationDbContext>();
 
-            _ = services.AddSingleton(TimeProvider.System);
+            services.AddSingleton(TimeProvider.System);
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             return services;
         }
