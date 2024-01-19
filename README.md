@@ -1,6 +1,8 @@
 ﻿<h1 align="center" id="title">GoodHamburger</h1>
 
-<p id="description">Welcome to GoodHamburger! 🍔 GoodHamburger is an API written in .NET 8 to serve as backend to order placement in restaurants.</p>
+<p id="description">Welcome to GoodHamburger! 🍔</p>
+
+<p>GoodHamburger is an API written in .NET 8 to serve as backend to order placement in restaurants.</p>
 
 <p align="center"><img src="https://img.shields.io/badge/.net-8.0.0-blue" alt="shields"></p>
 
