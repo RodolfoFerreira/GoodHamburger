@@ -49,7 +49,7 @@ docker compose up --build
     <img src="docs/images/docker.png" alt="Docker"/>
 </p>
 
-<p>Using docker compose, after all containers are up the API will be available at [http://localhost:8080](http://localhost:8080).</p>
+<p>Using docker compose, after all containers are up the API will be available at http://localhost:8080.</p>
 
 <h2>💻 Built with</h2>
 
