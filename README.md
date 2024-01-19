@@ -44,6 +44,7 @@ dotnet test
 ```
 docker compose up --build
 ```
+<p>Using docker compose, after all containers are up the API will be available at [http://localhost:8080](http://localhost:8000.)</p>
 
 <p style="text-align: center">
     <img src="docs/images/docker.png" alt="Docker"/>
