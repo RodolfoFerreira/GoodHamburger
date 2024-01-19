@@ -6,8 +6,6 @@
 
 <p align="center"><img src="https://img.shields.io/badge/.net-8.0.0-blue" alt="shields"></p>
 
-  
-  
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
@@ -21,11 +19,15 @@ Here're some of the project's best features:
 
 <p>1. Clone the repository on you local machine</p>
 
-<p>2. Run it using visual studio or using dotnet cli inside the src folder within the project GoodHamburger.API</p>
+<p>2. Run it using visual studio using http or https profile or using dotnet cli inside the src folder within the project GoodHamburger.API</p>
 
 ```
-dotnet run
+dotnet run --launch-profile https
 ```
+
+<p style="text-align: center">
+    <img src="docs/images/https.png" alt="Https"/>
+</p>
 
 <p>3. To run the tests use visual studio or the dotnet cli command inside test folder within the GoodHamburger.Unit.Test</p>
 
@@ -33,8 +35,20 @@ dotnet run
 dotnet test
 ```
 
+<h2>🐳 Docker support</h2>
+
+<p>This steps requires docker installed in the user machine first.</p>
   
-  
+<p>1. To run the application using docker, you can debug it inside visual studio using the profile Docker, or use the docker compose file to create a container. In the root folder, run the command</p>
+
+```
+docker compose up --build
+```
+
+<p style="text-align: center">
+    <img src="docs/images/docker.png" alt="Docker"/>
+</p>
+
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
@@ -58,5 +72,3 @@ Technologies used in the project:
 <p>1. Add integration tests</p>
 
 <p>2. Implement CQRS</p>
-
-<p>3. Setup docker</p>
