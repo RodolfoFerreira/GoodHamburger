@@ -7,7 +7,7 @@ using GoodHamburger.Domain.DTO.Product;
 
 namespace GoodHamburger.Service.Services
 {
-    internal class ProductService(IProductRepository productRepository, IMapper mapper) : IProductService
+    public class ProductService(IProductRepository productRepository, IMapper mapper) : IProductService
     {
 
         private readonly IProductRepository _productRepository = productRepository;

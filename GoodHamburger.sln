@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoodHamburger.Repository", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoodHamburger.Domain", "src\GoodHamburger.Domain\GoodHamburger.Domain.csproj", "{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FE6F92A2-05E1-44E6-B40B-1D46836588F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodHamburger.Unit.Tests", "test\GoodHamburger.Unit.Tests\GoodHamburger.Unit.Tests.csproj", "{280C5DD5-F1C7-4CB3-858B-65429C571D6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,10 @@ Global
 		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280C5DD5-F1C7-4CB3-858B-65429C571D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280C5DD5-F1C7-4CB3-858B-65429C571D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280C5DD5-F1C7-4CB3-858B-65429C571D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280C5DD5-F1C7-4CB3-858B-65429C571D6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{BF1A6657-CB02-4D0D-846B-6628B67A5B06} = {7C86B2DA-0A7B-4D8C-9DA8-D330AADFA8ED}
 		{CE144E2A-A92C-4CAD-8156-1BA75320A636} = {7C86B2DA-0A7B-4D8C-9DA8-D330AADFA8ED}
 		{39D5A1D2-5E2B-42B7-88DA-837D51DC5BFC} = {7C86B2DA-0A7B-4D8C-9DA8-D330AADFA8ED}
+		{280C5DD5-F1C7-4CB3-858B-65429C571D6C} = {FE6F92A2-05E1-44E6-B40B-1D46836588F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1473081-5D6F-436B-8A29-9CA87A9F10CD}
